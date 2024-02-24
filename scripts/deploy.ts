@@ -2,12 +2,12 @@ import { ethers } from "hardhat";
 
 async function main() {
  
-  const CripsymonieNFT = await ethers.deployContract("CRIPSYMONIE");
+  const OnchainNFT = await ethers.deployContract("OnchainNFT");
 
-  await CripsymonieNFT.waitForDeployment();
+  await OnchainNFT.waitForDeployment();
 
   console.log(
-    ` deployed to ${CripsymonieNFT.target}`
+    ` deployed to ${OnchainNFT.target}`
   );
 }
 
